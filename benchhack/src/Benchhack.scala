@@ -67,7 +67,7 @@ object Benchhack extends PerformanceTest {
     exec.independentSamples -> 1) in {
 
       var input = "input"
-      for (mult ← 2801 to 4000 by 200) {
+      for (mult ← 1 to 4000 by 200) {
 
         measure method "guard" in {
           using(runs) setUp (_ ⇒ input = "input" * (mult * mult)) in { loop ⇒
